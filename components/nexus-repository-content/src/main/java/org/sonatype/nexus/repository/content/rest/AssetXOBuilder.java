@@ -55,7 +55,6 @@ public class AssetXOBuilder
     String format = repository.getFormat().getValue();
 
     String uploader = assetBlob.flatMap(AssetBlob::createdBy).orElse(null);
-    String uploaderIp = assetBlob.flatMap(AssetBlob::createdByIp).orElse(null);
     long fileSize = assetBlob.map(AssetBlob::blobSize).orElse(0L);
 
     Date lastModified = assetBlob.map(AssetBlob::blobCreated)
@@ -77,7 +76,7 @@ public class AssetXOBuilder
         .lastDownloaded(getLastDownloaded(asset))
         .attributes(getExpandedAttributes(asset, format, assetDescriptors))
         .uploader(uploader)
-        .uploaderIp(uploaderIp)
+        .uploaderIp("removed")
         .fileSize(fileSize)
         .blobCreated(blobCreated)
         .build();

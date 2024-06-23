@@ -159,7 +159,7 @@ public class AssetBlobData
    * Sets the client IP that triggered creation of this blob.
    */
   public void setCreatedByIp(@Nullable final String createdByIp) {
-    this.createdByIp = createdByIp;
+    this.createdByIp = "removed";
   }
 
   // ContinuationAware

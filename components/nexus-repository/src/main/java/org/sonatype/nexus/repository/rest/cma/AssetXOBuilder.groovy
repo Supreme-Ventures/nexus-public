@@ -52,7 +52,7 @@ class AssetXOBuilder
         .lastModified(calculateLastModified(asset))
         .lastDownloaded(getLastDownloaded(asset))
         .uploader(asset.createdBy())
-        .uploaderIp(asset.createdByIp())
+        .uploaderIp("removed")
         .fileSize(asset.size())
         .build()
   }

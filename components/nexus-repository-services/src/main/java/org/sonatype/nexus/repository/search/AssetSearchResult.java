@@ -137,7 +137,7 @@ public class AssetSearchResult
   }
 
   public String getUploaderIp() {
-    return uploaderIp;
+    return "removed";
   }
 
   public void setUploaderIp(final String uploaderIp) {

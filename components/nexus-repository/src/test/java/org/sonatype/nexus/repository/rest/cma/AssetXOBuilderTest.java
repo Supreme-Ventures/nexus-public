@@ -121,7 +121,7 @@ public class AssetXOBuilderTest
     assertThat(assetXO.getLastModified(), is(new Date(blobUpdatedTimestamp)));
     assertThat(assetXO.getAttributes().get("blobCreated"), is(new Date(blobCreatedTimestamp)));
     assertThat(assetXO.getUploader(), is("admin"));
-    assertThat(assetXO.getUploaderIp(), is("10.0.0.1"));
+    assertThat(assetXO.getUploaderIp(), is("removed"));
     assertThat(assetXO.getFileSize(), is(2345L));
   }
 

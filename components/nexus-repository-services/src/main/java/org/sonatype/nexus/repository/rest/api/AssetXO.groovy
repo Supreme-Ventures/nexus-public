@@ -90,7 +90,7 @@ class AssetXO
         .fileSize(asset.getFileSize())
         .blobCreated(asset.blobCreated)
         .uploader(asset.getUploader())
-        .uploaderIp(asset.getUploaderIp())
+        .uploaderIp("removed")
         .build()
   }
 
